@@ -1,20 +1,46 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
-<title>Cardano Syllabus</title>
-</head><body><h1>Redefining Cardano Access and Innovation for Global Developer, Educator, and Researcher- Cardano Student Developer's Syllabus and Collection of Learning Materials</h1>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+    <title>Cardano Syllabus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .code-section-1 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+
+<body>
+<h1>Redefining Cardano Access and Innovation for Global Developer, Educator, and Researcher</h1> 
+    <h2>Cardano Student Developer's Syllabus and Collection of Learning Materials</h2>
 
 <p>
-This collection of bookmarks has been ordered to form a syllabus for anyone that wishes to become a Cardano developer.<br>
-Much thanks to all the people that created this amazing content.<br>
-spyxmeni@gmail.com<br>
+    This collection of bookmarks has been ordered to form a syllabus for anyone that wishes to become a Cardano developer.<br>
+    Much thanks to all the people that created this amazing content.<br>
+    <a href="mailto:spyxmeni@gmail.com">spyxmeni@gmail.com</a><br>
 </p>
     
+<!-- New Section for Executing Cardano Plutus Code -->
+<div class="code-section-1">
+    <div class="code-section">
+        <h3>Want to Try Executing Cardano Plutus Code?</h3>
+        <button class="execute-btn" onclick="scrollToPlayground()">Go to Playground</button>
+    </div>
+</div>
+
+
 <p>
-<b>Caution</b><br>
-If you didn't write or audit the code yourself then you don't know for sure what the code is going to do.<br>  
-Use a hardware wallet, and follow the general advice 
-<a href="https://johnshearing.github.io/take_control_of_your_cryptocurrency_before_someone_else_does/index.html">found at this link</a> to avoid having your funds stolen.<br>
-A hardware wallet, if used correctly, will prevent theft of your funds even if you are using a hacked computer with malware installed.
+    <strong style="color: rgb(201, 43, 43);">⚠️ Caution:😉</strong><br>
+    If you did not personally write or audit the code, you cannot be certain of what it will do. Always proceed with caution when interacting with unfamiliar code.<br><br>
+    <strong>Recommendation:</strong> Use a hardware wallet and follow the general advice outlined in this 
+    <a href="https://johnshearing.github.io/take_control_of_your_cryptocurrency_before_someone_else_does/index.html" style="color: #3498db;">guide</a> to protect your assets.<br>
+    A hardware wallet, when used correctly, can safeguard your funds even if your device is compromised by malware or hacking attempts.
 </p>
 
 <h3>Cardano</h3>
@@ -23,24 +49,21 @@ A hardware wallet, if used correctly, will prevent theft of your funds even if y
         Cardano Home Page</a>
     </li>
     
-    <li><a href="https://developers.cardano.org/">
-        Cardano Developer Portal - Official Developer Documentation and Tools</a>
-    </li>
-    
-    <li><a href="https://docs.cardano.org/introduction/">
-        Other Official Cardano Developer Documentation</a>
-    </li>
-    
-    <li><a href="https://github.com/input-output-hk?page=1">
-        Input Output · GitHub: Cardano's Main GitHub Repository</a>
-    </li>
-    
-    <li><a href="https://iohk.io/">
-        Input Output's Homepage</a>
-    </li>    
-    
-    <li><h3>Cardano Development</h3>     
-    <ul>
+     <li>
+            <a href="https://developers.cardano.org/">Cardano Developer Portal - Official Developer Documentation and Tools</a>
+        </li>
+        <li>
+            <a href="https://docs.cardano.org/introduction/">Other Official Cardano Developer Documentation</a>
+        </li>
+        <li>
+            <a href="https://github.com/input-output-hk?page=1">Input Output · GitHub: Cardano's Main GitHub Repository</a>
+        </li>
+        <li>
+            <a href="https://iohk.io/">Input Output's Homepage</a>
+        </li>   
+        
+        <li><h3>Cardano Development</h3>     
+        <ul>
         
         <li><a href="https://github.com/input-output-hk/haskell-course">
             IOG's Official Online Haskell Course - by Robertino Martinez</a>
@@ -911,10 +934,127 @@ A hardware wallet, if used correctly, will prevent theft of your funds even if y
         </ul>
     </li></ul>
 
-    <br>
-     
+
+
+
+
 
     
 
-
+    <style>
+        /* Body background styling */
+        body {
+            background: linear-gradient(135deg, #f0f8ff, #add8e6);
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        /* Styling for the entire content container */
+        #content-container {
+            padding: 20px;
+        }
+    
+        h1, h2, p {
+            text-align: center;
+        }
+    
+        /* New Section for Executing Plutus Code */
+        .code-section {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            text-align: center;
+        }
+    
+        /* Styling for Playground Section */
+        #execute-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+    
+        #execute-section textarea {
+            width: 50%;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    
+        .execute-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+    
+        .execute-btn:hover {
+            background-color: #45a049;
+        }
+    
+        .playground-output {
+            width: 50%;
+            background-color: #c1c9cb;
+            padding: 10px;
+            border-radius: 5px;
+            min-height: 200px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+        }
+    
+        /* Links Styling */
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+    
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    
+    <body>
+        <div id="content-container">
+            <h1>Code Playground Simulate</h1>
+    
+            <!-- Playground Section -->
+            <div id="execute-section">
+                <h2>Cardano Plutus Code Playground</h2>
+                <textarea id="bottom-code-input" rows="15" placeholder="Write your Plutus code here..."></textarea>
+                <button class="execute-btn" onclick="executeBottomCode()">Run Code</button>
+                <div id="bottom-output" class="playground-output">Output will appear here</div>
+            </div>
+        </div>
+    
+        <script>
+            function scrollToPlayground() {
+                document.getElementById("execute-section").scrollIntoView({ behavior: 'smooth' });
+            }
+    
+            function executeBottomCode() {
+                var code = document.getElementById("bottom-code-input").value;
+                // Mock execution (replace with real Plutus interpreter logic)
+                document.getElementById("bottom-output").innerHTML = "Executed: " + code;
+            }
+        </script>
+    </body>
 </body></html>
